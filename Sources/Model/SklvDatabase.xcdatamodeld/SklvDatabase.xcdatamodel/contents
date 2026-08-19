@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="24295.2" systemVersion="24F74" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Element" representedClassName="Element" syncable="YES" codeGenerationType="class">
+        <attribute name="boolean" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="data" optional="YES" attributeType="Binary"/>
+        <attribute name="date" attributeType="Date" defaultDateTimeInterval="-978328800" usesScalarValueType="NO"/>
+        <attribute name="double" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="index" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="integer64" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="key" optional="YES" attributeType="String"/>
+        <attribute name="string" optional="YES" attributeType="String"/>
+        <relationship name="item" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="elements" inverseEntity="Item"/>
+    </entity>
+    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
+        <attribute name="flag0" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="flag1" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="flag2" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="flag3" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="flag4" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="flag5" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="flag6" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="flag7" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="flag8" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="flag9" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="idSpace" optional="YES" attributeType="String"/>
+        <attribute name="number0" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="number1" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="number2" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="number3" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="number4" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="number5" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="number6" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="number7" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="number8" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="number9" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="text0" optional="YES" attributeType="String"/>
+        <attribute name="text1" optional="YES" attributeType="String"/>
+        <attribute name="text2" optional="YES" attributeType="String"/>
+        <attribute name="text3" optional="YES" attributeType="String"/>
+        <attribute name="text4" optional="YES" attributeType="String"/>
+        <attribute name="text5" optional="YES" attributeType="String"/>
+        <attribute name="text6" optional="YES" attributeType="String"/>
+        <attribute name="text7" optional="YES" attributeType="String"/>
+        <attribute name="text8" optional="YES" attributeType="String"/>
+        <attribute name="text9" optional="YES" attributeType="String"/>
+        <relationship name="elements" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Element" inverseName="item" inverseEntity="Element"/>
+    </entity>
+</model>
